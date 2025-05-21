@@ -6,7 +6,6 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    // <div className="container mx-auto">
     <nav className="flex fixed top-0 left-0 right-0 z-10  items-center justify-between bg-white text-black px-[2rem] py-[1rem] ">
       <div className="block md:hidden">
         <LuMenu />
@@ -30,6 +29,5 @@ export default function Navbar() {
         </li>
       </ul>
     </nav>
-    // </div>
   );
 }
