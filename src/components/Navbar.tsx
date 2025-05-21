@@ -2,11 +2,12 @@ import React from "react";
 import { Button } from "./ui/button";
 import { dataNavbar } from "@/lib/data";
 import { LuMenu } from "react-icons/lu";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
     // <div className="container mx-auto">
-    <nav className="flex fixed top-0 left-0 right-0 z-10  items-center justify-between bg-amber-200 text-black px-[2rem] py-[1rem] ">
+    <nav className="flex fixed top-0 left-0 right-0 z-10  items-center justify-between bg-white text-black px-[2rem] py-[1rem] ">
       <div className="block md:hidden">
         <LuMenu />
       </div>
@@ -16,16 +17,18 @@ export default function Navbar() {
           <li key={item.id}>
             <a
               href={item.hash}
-              className="font-semibold hover:underline hover:underline-offset-8 "
+              className="font-medium text-gray-700 hover:underline hover:underline-offset-8 "
             >
               {item.title}
             </a>
           </li>
         ))}
+        <li>
+          <Link href="">
+            <Button variant={"default"}>Contact Us</Button>
+          </Link>
+        </li>
       </ul>
-      <div className="hidden md:block">
-        <Button>Contact Us</Button>
-      </div>
     </nav>
     // </div>
   );

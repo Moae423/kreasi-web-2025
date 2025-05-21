@@ -6,22 +6,17 @@ export const dataNavbar = [
   },
   {
     id: 2,
-    title: "Projects",
-    hash: "#projects",
+    title: "Works",
+    hash: "#works",
   },
   {
     id: 3,
-    title: "Works",
-    hash: "#works",
+    title: "Services",
+    hash: "#services",
   },
   {
     id: 4,
     title: "About Us",
     hash: "#about-us",
-  },
-  {
-    id: 5,
-    title: "Contact Us",
-    hash: "#contact-us",
   },
 ];
