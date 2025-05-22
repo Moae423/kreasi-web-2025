@@ -9,10 +9,10 @@ export default function ServicesList() {
       {dataServices.map((item) => (
         <div
           key={item.id}
-          className="relative h-[20rem] bg-black w-full rounded-xl overflow-hidden"
+          className="relative h-[30rem] bg-black w-full rounded-xl overflow-hidden"
         >
           <Image
-            src={gambar}
+            src={item.gambar}
             alt={item.title}
             fill
             className="object-cover"
@@ -24,7 +24,7 @@ export default function ServicesList() {
               <h1 className="text-white font-semibold text-2xl">
                 {item.title}
               </h1>
-              <h2 className="text-white font-normal text-2xl max-w-2xl">
+              <h2 className="text-white hidden md:flex font-normal text-2xl max-w-2xl">
                 {item.subTitle}
               </h2>
             </div>

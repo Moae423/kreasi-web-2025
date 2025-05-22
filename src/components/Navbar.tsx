@@ -6,11 +6,15 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="flex fixed top-0 left-0 right-0 z-10  items-center justify-between bg-white text-black px-[2rem] py-[1rem] ">
-      <div className="block md:hidden">
-        <LuMenu />
+    <nav className="flex  items-center justify-between bg-white text-black px-[2rem] py-[1rem] ">
+      <div className="flex items-center">
+        <div className="block md:hidden">
+          <LuMenu />
+        </div>
+        <h1 className="text-md md:text-2xl font-semibold">
+          Kreasi Advertising
+        </h1>
       </div>
-      <h1 className="text-md md:text-2xl font-semibold">Kreasi Advertising</h1>
       <ul className="hidden md:flex items-center justify-center gap-5">
         {dataNavbar.map((item) => (
           <li key={item.id}>
