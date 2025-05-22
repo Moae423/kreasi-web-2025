@@ -1,5 +1,6 @@
 import Hero from "@/components/section/Hero";
 import Services from "@/components/section/Services";
+import Works from "@/components/section/Works";
 import React from "react";
 
 export default function Home() {
@@ -8,8 +9,11 @@ export default function Home() {
       <section id="hero" className="bg-white">
         <Hero />
       </section>
-      <section id="Works" className="bg-white">
+      <section id="services" className="bg-white">
         <Services />
+      </section>
+      <section id="works" className="bg-white">
+        <Works />
       </section>
     </div>
   );

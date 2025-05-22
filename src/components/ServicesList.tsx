@@ -1,6 +1,5 @@
 import { dataServices } from "@/lib/data";
 import Image from "next/image";
-import gambar from "@/assets/image/Girl.jpg";
 import React from "react";
 
 export default function ServicesList() {
@@ -9,7 +8,7 @@ export default function ServicesList() {
       {dataServices.map((item) => (
         <div
           key={item.id}
-          className="relative h-[30rem] bg-black w-full rounded-xl overflow-hidden"
+          className="relative h-[20rem] md:h-[30rem] bg-black max-w-7xl mx-auto w-full rounded-xl overflow-hidden hover:scale-105 transition duration-300 cursor-auto"
         >
           <Image
             src={item.gambar}

@@ -7,10 +7,10 @@ export default function Services() {
   return (
     <div className="container mx-auto">
       <div className="p-3">
-        <h1 className="text-[2rem] md:text-[3rem] text-center my-3 font-semibold">
-          What We Provide
+        <h1 className="text-[2rem] md:text-[2.5rem] text-start md:text-center my-3 font-bold">
+          Layanan Kami
         </h1>
-        <p className="text-center max-w-3xl mx-auto my-3 text-sm md:text-base">
+        <p className="text-start md:text-center  max-w-3xl mx-auto my-3 text-sm md:text-base">
           Kreasi Advertising menyediakan solusi periklanan yang lengkap dan
           terintegrasi mulai dari desain kreatif, pencetakan media promosi,
           hingga pemasangan baliho, neon box, signage, dan street sign.
