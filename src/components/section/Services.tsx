@@ -20,7 +20,7 @@ export default function Services() {
           <Link href="/services" passHref>
             <Button
               variant="ghost"
-              className="hover:underline hover:text-yellow-800 cursor-pointer transition ease-in-out duration-300"
+              className="hover:underline text-xl hover:text-yellow-800 cursor-pointer transition ease-in-out duration-300"
             >
               See More →
             </Button>

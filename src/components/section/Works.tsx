@@ -1,5 +1,6 @@
 import React from "react";
 import PhotoWorks from "@/components/PhotoWorks";
+import { Button } from "../ui/button";
 
 export default function Works() {
   return (
@@ -10,6 +11,11 @@ export default function Works() {
         keunggulan, inovasi, dan perhatian terhadap detail.
       </p>
       <PhotoWorks />
+      <div className="text-center">
+        <Button className="text-lg cursor-pointer hover:-translate-y-1 font-semibold  active:translate-y-0 px-6 py-3">
+          Contact Us
+        </Button>
+      </div>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import gambar1 from "@/assets/image/gambar1.jpg";
 import gambar2 from "@/assets/image/gambar2.jpg";
 import gambar3 from "@/assets/image/gambar3.jpg";
+import mediaCetak from "@/assets/image/media-cetak.jpg";
 
 export const dataNavbar = [
   {
@@ -43,5 +44,35 @@ export const dataServices = [
     title: "Papan Nama Toko",
     subTitle: "Membuat customer mengenali brand anda",
     gambar: gambar3,
+  },
+];
+
+export const dataPortofolio = [
+  {
+    id: 1,
+    gambar: gambar1,
+    caption: "Alat Cetak",
+  },
+  {
+    id: 2,
+    gambar: gambar2,
+    caption: "baliho",
+  },
+  {
+    id: 3,
+    gambar: mediaCetak,
+    caption: "Cetak Koran",
+  },
+  {
+    id: 4,
+    gambar: gambar1,
+  },
+  {
+    id: 5,
+    gambar: gambar1,
+  },
+  {
+    id: 6,
+    gambar: gambar1,
   },
 ];

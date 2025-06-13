@@ -8,7 +8,7 @@ export default function ServicesList() {
       {dataServices.map((item) => (
         <div
           key={item.id}
-          className="relative h-[20rem] md:h-[30rem] bg-black max-w-7xl mx-auto w-full rounded-xl overflow-hidden hover:scale-105 transition duration-300 cursor-auto"
+          className="relative h-[20rem] md:h-[30rem] bg-black max-w-7xl mx-auto w-full rounded-xl overflow-hidden hover:scale-105 transition duration-300 cursor-pointer"
         >
           <Image
             src={item.gambar}
