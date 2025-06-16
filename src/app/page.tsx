@@ -1,3 +1,4 @@
+import Clients from "@/components/section/Clients";
 import Hero from "@/components/section/Hero";
 import Services from "@/components/section/Services";
 import Works from "@/components/section/Works";
@@ -11,6 +12,9 @@ export default function Home() {
         className="relative min-h-screen overflow-hidden bg-white"
       >
         <Hero />
+      </section>
+      <section id="clients" className=" ">
+        <Clients />
       </section>
       <section id="services" className=" min-h-screen">
         <Services />

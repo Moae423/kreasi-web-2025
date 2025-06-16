@@ -7,6 +7,7 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import { Satoshi } from "@/lib/font";
 import { MdWork } from "react-icons/md";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Navbar() {
   const navbarRef = useRef<HTMLDivElement>(null);
@@ -58,13 +59,16 @@ export default function Navbar() {
       transition-all duration-300"
     >
       <div className="flex items-center gap-5">
-        <Link href="/">
-          <h1
-            className={`text-lg md:text-xl lg:text-2xl font-bold text-[#f7f7f7] cursor-pointer hover:underline underline-offset-8 ${Satoshi.className}`}
-          >
-            Kreasi Advertising
-          </h1>
-        </Link>
+        <div className="flex items-center gap-5">
+          <GiHamburgerMenu color="#f7f7f7" className="block md:hidden" />
+          <Link href="/">
+            <h1
+              className={`text-md md:text-xl lg:text-2xl font-bold text-[#f7f7f7] cursor-pointer hover:underline underline-offset-8 ${Satoshi.className}`}
+            >
+              Kreasi Advertising
+            </h1>
+          </Link>
+        </div>
         <ul
           ref={ulRef}
           className="md:flex items-center gap-5 py-2 px-4 transition-colors duration-300 hidden "
