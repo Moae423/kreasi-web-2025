@@ -1,32 +1,45 @@
+import { Satoshi } from "@/lib/font";
+import { Button } from "../ui/button";
+import Testing from "@/components/Testing";
 import Link from "next/link";
-import React from "react";
-import ServicesList from "../ServicesList";
-import { Button } from "@/components/ui/button";
+import { MdCall } from "react-icons/md";
 
-export default function Services() {
+const Services = () => {
   return (
-    <div className="container mx-auto">
-      <div className="p-3">
-        <h1 className="text-[2rem] md:text-[2.5rem] text-start md:text-center my-3 font-bold">
-          Layanan Kami
-        </h1>
-        <p className="text-start md:text-center  max-w-3xl mx-auto my-3 text-sm md:text-base">
-          Kreasi Advertising menyediakan solusi periklanan yang lengkap dan
-          terintegrasi mulai dari desain kreatif, pencetakan media promosi,
-          hingga pemasangan baliho, neon box, signage, dan street sign.
-        </p>
-        <ServicesList />
-        <div className="flex items-center justify-center mt-6">
-          <Link href="/services" passHref>
-            <Button
-              variant="ghost"
-              className="hover:underline text-xl hover:text-yellow-800 cursor-pointer transition ease-in-out duration-300"
-            >
-              See More →
-            </Button>
-          </Link>
+    <div className={`container mx-auto ${Satoshi.className} min-h-screen`}>
+      <div className="p-8">
+        <div className="flex flex-col-reverse gap-8 md:flex-row items-center">
+          <Testing />
+          <div className="flex flex-col gap-5 max-w-3xl">
+            <div className="flex items-center justify-between">
+              <h1 className="text-xl md:text-2xl lg:text-3xl font-bold ">
+                Services List
+              </h1>
+              <Link href="#">
+                <Button className="rounded-full bg-white text-black font-semibold px-6 border border-black cursor-pointer hover:bg-black hover:text-white hover:-translate-y-1  active:translate-y-0 transition duration-150">
+                  Browser All Services
+                </Button>
+              </Link>
+            </div>
+            <p className=" text-lg">
+              Kami menyediakan solusi visual dan pemasangan media luar ruang
+              dengan pendekatan yang strategis dan berkelas. Mulai dari desain
+              hingga eksekusi, setiap detail kami kerjakan untuk memastikan
+              brand Anda tampil mencuri perhatian tanpa terlihat berlebihan.
+            </p>
+            <div className="">
+              <Link href="#">
+                <Button className="rounded-full bg-white text-black font-semibold px-6 border border-black cursor-pointer hover:bg-black hover:text-white hover:-translate-y-1  active:translate-y-0 transition duration-150">
+                  <MdCall />
+                  Contact Us
+                </Button>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default Services;

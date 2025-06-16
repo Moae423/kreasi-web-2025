@@ -1,21 +1,24 @@
-import React from "react";
-import PhotoWorks from "@/components/PhotoWorks";
-import { Button } from "../ui/button";
+import { LayoutGridDemo } from "../GridPhoto";
 
-export default function Works() {
+const Works = () => {
   return (
-    <div className="container mx-auto  p-6">
-      <h1 className="text-[2rem] md:text-[2.5rem] font-bold ">Portofolio</h1>
-      <p className="text-base">
-        Setiap proyek merupakan cerminan dari hasrat kami untuk mencapai
-        keunggulan, inovasi, dan perhatian terhadap detail.
-      </p>
-      <PhotoWorks />
-      <div className="text-center">
-        <Button className="text-lg cursor-pointer hover:-translate-y-1 font-semibold  active:translate-y-0 px-6 py-3">
-          Contact Us
-        </Button>
+    <div className="">
+      <div className="p-8">
+        <div className="flex flex-col items-center gap-3">
+          <h1 className="text-xl md:text-2xl lg:text-4xl font-bold  text-white">
+            Our Works
+          </h1>
+          <p className="text-white max-w-5xl text-center">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio qui
+            labore deserunt illum ex quidem laboriosam voluptatibus iste!
+            Reprehenderit, doloremque libero atque laboriosam beatae
+            consequuntur numquam qui commodi illum! Libero.
+          </p>
+        </div>
+        <LayoutGridDemo />
       </div>
     </div>
   );
-}
+};
+
+export default Works;
