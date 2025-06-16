@@ -1,5 +1,5 @@
 "use client";
-import gambar1 from "@/assets/image/gambar2.jpg";
+import gambar1 from "@/assets/image/background-homepage.jpg";
 import { Satoshi } from "@/lib/font";
 import Image from "next/image";
 import { Button } from "../ui/button";
@@ -37,16 +37,14 @@ export default function Hero() {
   }, []);
 
   return (
-    <div
-      className={`min-h-screen  relative ${Satoshi.className} rounded-b-[3rem] bg-white`}
-    >
+    <div className={`min-h-screen  relative ${Satoshi.className}  bg-white`}>
       <div className="relative w-full h-screen">
-        <div className="absolute inset-0 bg-[#000]/50 z-10 rounded-b-[3rem]" />
+        <div className="absolute inset-0 bg-[#000]/50 z-10 " />
         <Image
           src={gambar1}
           alt="gambar1"
           fill
-          className="object-cover saturate-25 bg-white rounded-b-[3rem]"
+          className="object-cover saturate-25 bg-white "
         />
       </div>
       <div className="flex flex-col p-8 justify-center max-w-7xl mx-auto absolute inset-0 z-20">

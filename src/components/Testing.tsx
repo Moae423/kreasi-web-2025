@@ -1,33 +1,31 @@
 "use client";
 
-import gambar1 from "@/assets/image/Girl.jpg";
-
 import Carousel from "@/components/ui/carousel";
 export default function CarouselDemo() {
   const slideData = [
     {
-      title: "Mystic Mountains",
+      title: "Cetak Banner",
       button: "Explore Component",
-      description: "Pemasangan Baliho",
+      // description: "Pemasangan Baliho",
       src: "/gambar1.jpg",
     },
     {
-      title: "Urban Dreams",
+      title: "Pemasangan Baliho",
       button: "Explore Component",
-      description: "Media Cetak",
-      src: "https://images.unsplash.com/photo-1518710843675-2540dd79065c?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      // description: "Pemasangan Baliho",
+      src: "/image/Billboard.jpg",
     },
     {
-      title: "Neon Nights",
+      title: "Street Sign",
       button: "Explore Component",
-      description: "testing",
-      src: "https://images.unsplash.com/photo-1590041794748-2d8eb73a571c?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      // description: "testing",
+      src: "/image/street-sign.jpg",
     },
     {
-      title: "Desert Whispers",
+      title: "Pemasangan Lampu Neon",
       button: "Explore Component",
-      description: "testing",
-      src: "https://images.unsplash.com/photo-1679420437432-80cfbf88986c?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      // description: "testing",
+      src: "/image/neon-box.jpg",
     },
   ];
   return (

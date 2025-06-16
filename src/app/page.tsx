@@ -12,10 +12,10 @@ export default function Home() {
       >
         <Hero />
       </section>
-      <section id="services" className="rounded-[3rem] min-h-screen">
+      <section id="services" className=" min-h-screen">
         <Services />
       </section>
-      <section id="hero" className="rounded-t-[3rem] min-h-screen bg-[#000000]">
+      <section id="works" className=" min-h-screen bg-[#000000]">
         <Works />
       </section>
     </div>
