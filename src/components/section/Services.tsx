@@ -2,7 +2,6 @@ import { Satoshi } from "@/lib/font";
 import { Button } from "../ui/button";
 import Testing from "@/components/Testing";
 import Link from "next/link";
-import { MdCall } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";
 
 const Services = () => {

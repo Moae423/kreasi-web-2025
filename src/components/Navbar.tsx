@@ -6,8 +6,6 @@ import { dataNavbar } from "@/lib/data";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { Satoshi } from "@/lib/font";
-import { MdWork } from "react-icons/md";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { BsWhatsapp } from "react-icons/bs";
 import DropdownMobile from "./DropdownMobile";
 
