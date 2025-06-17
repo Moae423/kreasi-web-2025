@@ -8,6 +8,7 @@ import { Button } from "./ui/button";
 import { Satoshi } from "@/lib/font";
 import { MdWork } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { BsWhatsapp } from "react-icons/bs";
 
 export default function Navbar() {
   const navbarRef = useRef<HTMLDivElement>(null);
@@ -86,11 +87,11 @@ export default function Navbar() {
 
       <Link href="">
         <Button
-          variant={"default"}
-          className={`text-lg bg-[#f7f7f7] hover:bg-[#594302] text-[#000000] hover:text-white shadow-sm py-5 px-4 cursor-pointer rounded-full hover:scale-105 active:scale-100 transition duration-150 ${Satoshi.className}`}
+          variant={"outline"}
+          className={`text-base   text-black  shadow-sm py-5 px-4 cursor-pointer rounded-full hover:scale-105 active:scale-100 transition duration-150 ${Satoshi.className}`}
         >
-          <MdWork />
-          Hire Us
+          <BsWhatsapp />
+          Hubungi Kami
         </Button>
       </Link>
     </nav>

@@ -1,8 +1,9 @@
+import { Satoshi } from "@/lib/font";
 import { LayoutGridDemo } from "../GridPhoto";
 
 const Works = () => {
   return (
-    <div className="">
+    <div className={`${Satoshi.className}`}>
       <div className="p-8">
         <div className="flex flex-col items-center gap-3">
           <h1 className="text-xl md:text-2xl lg:text-4xl font-bold  text-white">

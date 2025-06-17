@@ -3,9 +3,9 @@ import gambar1 from "@/assets/image/background-homepage.jpg";
 import { Satoshi } from "@/lib/font";
 import Image from "next/image";
 import { Button } from "../ui/button";
-import { MdCall } from "react-icons/md";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { BsWhatsapp } from "react-icons/bs";
 
 export default function Hero() {
   const [currentDay, setCurrentDay] = useState("");
@@ -68,10 +68,12 @@ export default function Hero() {
               pengalaman bertahun-tahun dalam dunia periklanan luar ruang.
             </p>
           </div>
-          <Link href="#">
-            <Button className="rounded-full bg-white text-black font-semibold px-6 border border-black cursor-pointer hover:bg-black hover:text-white hover:-translate-y-1 my-3  active:translate-y-0 transition duration-150">
-              <MdCall />
-              Contact Us
+          <Link href="">
+            <Button
+              className={`text-lg bg-[#f7f7f7]  text-[#000000] hover:text-white shadow-sm py-5 px-4 cursor-pointer rounded-full hover:scale-105 active:scale-100 transition duration-150 my-3 ${Satoshi.className}`}
+            >
+              <BsWhatsapp />
+              Hubungi Kami
             </Button>
           </Link>
         </div>

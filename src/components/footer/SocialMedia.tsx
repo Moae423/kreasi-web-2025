@@ -7,16 +7,32 @@ export default function SocialMedia() {
   return (
     <div className="flex items-center gap-5">
       <Link href="#">
-        <FaFacebook />
+        <FaFacebook
+          size={30}
+          color="#f7f7f7"
+          className="hover:-translate-y-1 active:translate-y-0 transition duration-150"
+        />
       </Link>
       <Link href="#">
-        <FaInstagram />
+        <FaInstagram
+          size={30}
+          color="#f7f7f7"
+          className="hover:-translate-y-1 active:translate-y-0 transition duration-150"
+        />
       </Link>
       <Link href="#">
-        <FaTwitterSquare />
+        <FaTwitterSquare
+          size={30}
+          color="#f7f7f7"
+          className="hover:-translate-y-1 active:translate-y-0 transition duration-150"
+        />
       </Link>
       <Link href="#">
-        <FaYoutube />
+        <FaYoutube
+          size={30}
+          color="#f7f7f7"
+          className="hover:-translate-y-1 active:translate-y-0 transition duration-150"
+        />
       </Link>
     </div>
   );
