@@ -13,9 +13,9 @@ export default function Footer() {
         <div className="flex justify-center">
           <Image src={logoKreasi} alt="logo kreasi" className="w-24" />
         </div>
-        <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-300">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-          consequuntur amet culpa cum itaque neque.
+        <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-300 font-medium">
+          Solusi kreatif untuk brand yang ingin tampil mencuri perhatian. Kreasi
+          Advertising.
         </p>
         <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
           {dataNavbar.map((i) => (

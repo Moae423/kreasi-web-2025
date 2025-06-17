@@ -18,11 +18,6 @@ export const dataNavbar = [
   },
   {
     id: 3,
-    title: "Works",
-    hash: "#works",
-  },
-  {
-    id: 4,
     title: "About Us",
     hash: "#about-us",
   },

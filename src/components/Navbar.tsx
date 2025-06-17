@@ -9,6 +9,7 @@ import { Satoshi } from "@/lib/font";
 import { MdWork } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BsWhatsapp } from "react-icons/bs";
+import DropdownMobile from "./DropdownMobile";
 
 export default function Navbar() {
   const navbarRef = useRef<HTMLDivElement>(null);
@@ -56,15 +57,15 @@ export default function Navbar() {
   return (
     <nav
       ref={navbarRef}
-      className="flex fixed  top-0 left-0 right-0 z-50 py-6 px-8  items-center justify-evenly gap-5 
+      className="flex fixed  top-0 left-0 right-0 z-50 py-6 px-8  items-center justify-between md:justify-evenly gap-5 
       transition-all duration-300"
     >
       <div className="flex items-center gap-5">
         <div className="flex items-center gap-5">
-          <GiHamburgerMenu color="#f7f7f7" className="block md:hidden" />
+          <DropdownMobile />
           <Link href="/">
             <h1
-              className={`text-md md:text-xl lg:text-2xl font-bold text-[#f7f7f7] cursor-pointer hover:underline underline-offset-8 ${Satoshi.className}`}
+              className={`text-xl md:text-2xl lg:text-2xl font-bold text-[#f7f7f7] cursor-pointer hover:underline underline-offset-8 ${Satoshi.className}`}
             >
               Kreasi Advertising
             </h1>
@@ -85,10 +86,10 @@ export default function Navbar() {
         </ul>
       </div>
 
-      <Link href="">
+      <Link href="" className="hidden md:block">
         <Button
           variant={"outline"}
-          className={`text-base   text-black  shadow-sm py-5 px-4 cursor-pointer rounded-full hover:scale-105 active:scale-100 transition duration-150 ${Satoshi.className}`}
+          className={`text-base text-black  shadow-sm px-8 cursor-pointer rounded-full hover:scale-105 active:scale-100 transition duration-150 ${Satoshi.className}`}
         >
           <BsWhatsapp />
           Hubungi Kami
