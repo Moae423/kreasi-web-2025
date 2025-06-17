@@ -1,31 +1,26 @@
 "use client";
-
+import billboard from "@/assets/image/Billboard.jpg";
+import gambar1 from "@/assets/image/gambar1.jpg";
+import streetSign from "@/assets/image/street-sign.jpg";
+import neonBox from "@/assets/image/neon-box.jpg";
 import Carousel from "@/components/ui/carousel";
 export default function CarouselDemo() {
   const slideData = [
     {
       title: "Cetak Banner",
-      button: "Explore Component",
-      // description: "Pemasangan Baliho",
-      src: "/gambar1.jpg",
+      src: gambar1,
     },
     {
       title: "Pemasangan Baliho",
-      button: "Explore Component",
-      // description: "Pemasangan Baliho",
-      src: "/image/Billboard.jpg",
+      src: billboard,
     },
     {
       title: "Street Sign",
-      button: "Explore Component",
-      // description: "testing",
-      src: "/image/street-sign.jpg",
+      src: streetSign,
     },
     {
       title: "Pemasangan Lampu Neon",
-      button: "Explore Component",
-      // description: "testing",
-      src: "/image/neon-box.jpg",
+      src: neonBox,
     },
   ];
   return (
