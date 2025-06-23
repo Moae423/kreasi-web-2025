@@ -20,10 +20,10 @@ export default function Home() {
       <section id="services" className=" min-h-screen">
         <Services />
       </section>
-      <section id="works" className=" min-h-screen bg-[#000000]">
+      <section id="works" className="bg-[#000000]">
         <Works />
       </section>
-      <section id="promote" className="bg-[#000000]">
+      <section id="promote" className="bg-[#fff]">
         <Promote />
       </section>
     </div>

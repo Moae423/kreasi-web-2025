@@ -39,7 +39,7 @@ export default function Navbar() {
         });
       } else {
         gsap.to(navbar, {
-          backgroundColor: "none",
+          backgroundColor: "transparent",
           boxShadow: "none",
           duration: 0.1,
         });
@@ -74,12 +74,13 @@ export default function Navbar() {
           className="md:flex items-center gap-5 py-2 px-4 transition-colors duration-300 hidden "
         >
           {dataNavbar.map((i) => (
-            <li
-              key={i.id}
-              className={`text-md font-semibold ${Satoshi.className} text-[#f7f7f7] hover:text-[#fff] cursor-pointer rounded-full hover:bg-[#000000] py-1 px-3 transition ease-in-out duration-150`}
-            >
-              <Link href={i.hash}>{i.title}</Link>
-            </li>
+            <Link href={i.hash} key={i.id}>
+              <li
+                className={`text-md font-semibold ${Satoshi.className} text-[#f7f7f7] hover:text-[#fff] cursor-pointer rounded-full hover:bg-[#000000] py-1 px-3 transition ease-in-out duration-150`}
+              >
+                {i.title}
+              </li>
+            </Link>
           ))}
         </ul>
       </div>

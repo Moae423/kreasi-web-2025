@@ -5,11 +5,13 @@ import gudangGaram from "@/assets/image/logo-gudang-garam.png";
 import lenovo from "@/assets/image/logo-lenovo.png";
 import hondaAhm from "@/assets/image/logo-honda.png";
 
+// link
+
 export const dataNavbar = [
   {
     id: 1,
     title: "Home",
-    hash: "#home",
+    hash: "/",
   },
   {
     id: 2,
@@ -19,7 +21,7 @@ export const dataNavbar = [
   {
     id: 3,
     title: "About Us",
-    hash: "#about-us",
+    hash: "/about-us",
   },
 ];
 
@@ -46,6 +48,18 @@ export const dataClients = [
   },
   {
     id: 6,
+    image: hondaAhm,
+  },
+  {
+    id: 7,
+    image: gudangGaram,
+  },
+  {
+    id: 8,
+    image: lenovo,
+  },
+  {
+    id: 9,
     image: hondaAhm,
   },
 ];

@@ -1,44 +1,102 @@
+"use client";
+
 import { Satoshi } from "@/lib/font";
-import { Button } from "../ui/button";
-import Testing from "@/components/Testing";
-import Link from "next/link";
-import { BsWhatsapp } from "react-icons/bs";
+import React, { useState } from "react";
+import Image from "next/image";
+import gambar1 from "@/assets/image/promote-image.jpg";
+import gambar2 from "@/assets/image/Billboard.jpg";
+import gambar3 from "@/assets/image/neon-box.jpg";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+
+const services = [
+  {
+    title: "Layanan Media Cetak Profesional",
+    description:
+      "Sebagai tempat periklanan terpercaya di Sumatera Barat, Kreasi Advertising menyediakan layanan media cetak berkualitas untuk kebutuhan promosi bisnis Anda di Bukittinggi dan sekitarnya.",
+    image: gambar1,
+    cta: "Lihat Detail",
+  },
+  {
+    title: "Jasa Pemasangan Baliho di Sumatera Barat",
+    description:
+      "Kreasi Advertising berasal di Bukittinggi dan ahli dalam pemasangan baliho strategis untuk menjangkau audiens luas di seluruh wilayah Sumatera Barat.",
+    image: gambar2,
+    cta: "Lihat Detail",
+  },
+  {
+    title: "Pemasangan Neon Box Berkualitas",
+    description:
+      "Tingkatkan visibilitas bisnis Anda bersama Kreasi Advertising, tempat periklanan di Sumatera Barat yang menyediakan jasa pemasangan lampu neon box menarik dan tahan lama.",
+    image: gambar3,
+    cta: "Lihat Detail",
+  },
+  // Tambahan dummy service untuk testing
+  {
+    title: "Desain Branding & Visual",
+    description:
+      "Kreasi Advertising juga menyediakan jasa desain visual kreatif untuk branding UMKM di Bukittinggi dan Sumatera Barat.",
+    image: gambar1,
+    cta: "Lihat Detail",
+  },
+];
 
 const Services = () => {
+  const [showAll, setShowAll] = useState(false);
+
+  const visibleServices = showAll ? services : services.slice(0, 3);
+
   return (
-    <div className={`container mx-auto ${Satoshi.className} min-h-screen`}>
-      <div className="p-8">
-        <div className="flex flex-col gap-8 lg:flex-row items-center">
-          <Testing />
-          <div className="flex flex-col gap-5 max-w-3xl">
-            <div className="flex items-center justify-between">
-              <h1 className="text-xl md:text-2xl lg:text-3xl font-bold ">
-                Services List
-              </h1>
-              <Link href="#">
-                <Button className="rounded-full bg-white text-black font-semibold px-6 border border-black cursor-pointer hover:bg-black hover:text-white hover:-translate-y-1  active:translate-y-0 transition duration-150">
-                  Browser All Services
-                </Button>
-              </Link>
+    <div className={`px-4 py-12 ${Satoshi.className}`}>
+      <div className="max-w-6xl mx-auto">
+        <h1 className="text-xl md:text-2xl lg:text-4xl font-bold text-center mb-12 text-black">
+          Our Services{" "}
+        </h1>
+
+        {visibleServices.map((service, index) => (
+          <Card
+            key={index}
+            className={`mb-12 p-6 md:p-10 shadow-xl rounded-2xl flex flex-col md:flex-row gap-8 items-center ${
+              index % 2 !== 0 ? "md:flex-row-reverse" : ""
+            }`}
+          >
+            {/* Gambar */}
+            <div className="w-full md:w-1/2 h-[20rem] overflow-hidden rounded-xl">
+              <Image
+                src={service.image}
+                alt={service.title}
+                width={600}
+                height={250}
+                className="w-full h-full object-cover rounded-xl"
+              />
             </div>
-            <p className=" text-lg">
-              Kami menyediakan solusi visual dan pemasangan media luar ruang
-              dengan pendekatan yang strategis dan berkelas. Mulai dari desain
-              hingga eksekusi, setiap detail kami kerjakan untuk memastikan
-              brand Anda tampil mencuri perhatian tanpa terlihat berlebihan.
-            </p>
-            <div className="">
-              <Link href="">
-                <Button
-                  className={`text-lg bg-[#f7f7f7]  text-[#000000] hover:text-white shadow-sm shadow-gray-700 py-5 px-4 cursor-pointer rounded-full hover:scale-105 active:scale-100 transition duration-150 ${Satoshi.className}`}
-                >
-                  <BsWhatsapp />
-                  Hubungi Kami
-                </Button>
-              </Link>
-            </div>
+
+            {/* Teks */}
+            <CardContent className="w-full md:w-1/2 text-center md:text-left space-y-4 p-0">
+              <h2 className="text-2xl font-semibold text-black">
+                {service.title}
+              </h2>
+              <p className="text-muted-foreground">{service.description}</p>
+              <Button
+                variant={"default"}
+                className="mt-2 hover:cursor-pointer hover:-translate-y-1 active:translate-y-0 transition duration-150 text-white"
+              >
+                {service.cta}
+              </Button>
+            </CardContent>
+          </Card>
+        ))}
+
+        {services.length > 3 && (
+          <div className="text-center mt-8">
+            <Button
+              onClick={() => setShowAll(!showAll)}
+              className="px-6 py-2 bg-[#000] hover:cursor-pointer hover:-translate-y-1 active:translate-y-0 transition duration-150 text-white rounded-full"
+            >
+              {showAll ? "Tampilkan Lebih Sedikit" : "Lihat Lebih Banyak"}
+            </Button>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );
