@@ -24,10 +24,10 @@ export default function Navbar() {
 
       if (currentY > lastY) {
         // Scroll down -> hide navbar
-        gsap.to(navbar, { y: -100, duration: 0.15, ease: "power2.inOut" });
+        gsap.to(navbar, { y: -100, ease: "power4.inOut" });
       } else {
         // Scroll up -> show navbar + add bg
-        gsap.to(navbar, { y: 0, duration: 0.15, ease: "power4.inOut" });
+        gsap.to(navbar, { y: 0, ease: "power4.inOut" });
       }
 
       // Tambah/remove background fill

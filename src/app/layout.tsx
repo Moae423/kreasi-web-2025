@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import LenisProvider from "@/components/LenisProvider";
+import { Satoshi } from "@/lib/font";
 
 export const metadata: Metadata = {
   title:
@@ -21,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` antialiased`}>
+      <body className={` ${Satoshi.className} antialiased`}>
         <LenisProvider>
           <Navbar />
           {children}

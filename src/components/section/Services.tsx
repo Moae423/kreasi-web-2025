@@ -79,7 +79,7 @@ const Services = () => {
               <p className="text-muted-foreground">{service.description}</p>
               <Button
                 variant={"default"}
-                className="mt-2 hover:cursor-pointer hover:-translate-y-1 active:translate-y-0 transition duration-150 text-white"
+                className="mt-2 hover:cursor-pointer hover:-translate-y-1 active:translate-y-0 transition duration-300 text-white"
               >
                 {service.cta}
               </Button>
@@ -91,7 +91,7 @@ const Services = () => {
           <div className="text-center mt-8">
             <Button
               onClick={() => setShowAll(!showAll)}
-              className="px-6 py-2 bg-[#000] hover:cursor-pointer hover:-translate-y-1 active:translate-y-0 transition duration-150 text-white rounded-full"
+              className="px-6 py-2 bg-[#000] hover:cursor-pointer hover:-translate-y-1 active:translate-y-0 transition duration-300 text-white rounded-full"
             >
               {showAll ? "Tampilkan Lebih Sedikit" : "Lihat Lebih Banyak"}
             </Button>

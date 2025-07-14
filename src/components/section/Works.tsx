@@ -6,9 +6,8 @@ import gsap from "gsap";
 import image1 from "@/assets/image/gambar1.jpg"; // statically imported image
 import image2 from "@/assets/image/background-homepage.jpg"; // reuse for example, ganti sesuai kebutuhan
 import Link from "next/link";
-import { Button } from "../ui/button";
 import { BsWhatsapp } from "react-icons/bs";
-import { Satoshi } from "@/lib/font";
+import { InteractiveHoverButton } from "../magicui/interactive-hover-button";
 
 const works = [
   {
@@ -109,13 +108,13 @@ const Works = () => {
           ))}
         </div>
         <div className="flex items-center justify-center my-3">
-          <Link href="">
-            <Button
-              className={`text-lg bg-[#f7f7f7]  text-[#000000] hover:text-white shadow-sm py-5 px-4 cursor-pointer rounded-full hover:scale-105 active:scale-100 transition duration-150 my-3 ${Satoshi.className}`}
-            >
-              <BsWhatsapp />
-              Hubungi Kami
-            </Button>
+          <Link href="/">
+            <InteractiveHoverButton className="my-3">
+              <div className="flex items-center gap-1">
+                <BsWhatsapp />
+                Hubungi Kami
+              </div>
+            </InteractiveHoverButton>
           </Link>
         </div>
       </div>
