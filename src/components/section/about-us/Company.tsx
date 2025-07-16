@@ -15,7 +15,7 @@ const Company: React.FC = () => {
             eum ipsa placeat fuga?
           </p>
         </div>
-        <div className="relative w-full h-[35rem] bg-gray-200 rounded-2xl">
+        <div className="relative w-full h-[45rem] bg-gray-200 rounded-2xl">
           <Image
             src={company}
             alt="gambar"
