@@ -8,7 +8,8 @@ import { Button } from "./ui/button";
 import { Satoshi } from "@/lib/font";
 import { BsWhatsapp } from "react-icons/bs";
 import DropdownMobile from "./DropdownMobile";
-
+import Image from "next/image";
+import logoKreasi from "@/assets/image/logo-kreasi.png";
 export default function Navbar() {
   const navbarRef = useRef<HTMLDivElement>(null);
   const ulRef = useRef<HTMLUListElement>(null);
@@ -61,6 +62,7 @@ export default function Navbar() {
       <div className="flex items-center gap-5">
         <div className="flex items-center gap-5">
           <DropdownMobile />
+          <Image src={logoKreasi} alt="logo kreasi" className="w-12" />
           <Link href="/">
             <h1
               className={`text-xl md:text-2xl lg:text-2xl font-bold text-[#f7f7f7] cursor-pointer hover:underline underline-offset-8 ${Satoshi.className}`}
