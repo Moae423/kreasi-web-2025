@@ -88,7 +88,7 @@ export default function Navbar() {
       <Link href="" className="hidden md:block">
         <Button
           variant={"outline"}
-          className={`text-base text-black  shadow-sm px-8 cursor-pointer rounded-full hover:scale-105 active:scale-100 transition duration-150 ${Satoshi.className}`}
+          className={`text-base text-black font-bold shadow-sm px-8 cursor-pointer rounded-full hover:scale-105 active:scale-100 transition duration-150 ${Satoshi.className}`}
         >
           <BsWhatsapp />
           Hubungi Kami

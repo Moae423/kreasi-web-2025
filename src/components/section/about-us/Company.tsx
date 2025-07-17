@@ -4,10 +4,10 @@ import company from "@/assets/image/Company.jpg";
 
 const Company: React.FC = () => {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white p-10">
       <div className="flex flex-col items-center justify-center gap-5 p-10">
         <div className="flex flex-col items-center justify-center gap-3">
-          <h1 className="text-2xl md:text-4xl font-bold">Our Company</h1>
+          <h1 className="text-2xl md:text-4xl font-medium">Our Company</h1>
           <p className="text-lg md:text-xl text-gray-300 text-center font-normal max-w-7xl ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
             quam fugit blanditiis quisquam, aspernatur illo soluta, at facilis

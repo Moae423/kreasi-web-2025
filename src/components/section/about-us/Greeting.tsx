@@ -5,7 +5,7 @@ import { Satoshi } from "@/lib/font";
 
 const Greeting = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-[70rem] bg-black p-5">
+    <div className="flex flex-col items-center justify-center h-[70rem] bg-black p-10">
       <div className="text-center my-3">
         <h1 className="text-xl text-white md:text-3xl font-medium">
           Greeting To Meet You
