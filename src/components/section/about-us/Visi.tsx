@@ -30,49 +30,60 @@ const Visi = () => {
         "Terus berinovasi dalam teknologi dan desain untuk memperkuat dampak visual di ruang publik.",
     },
   ];
+
   return (
     <div
-      className={`${Satoshi.className} flex items-center flex-col justify-center gap-3 min-h-screen bg-black p-10`}
+      className={`${Satoshi.className} flex items-center flex-col justify-center gap-6 bg-black px-4 py-10 md:px-10 md:py-20`}
     >
-      <h1 className="text-white text-4xl font-medium text-center">
+      <h1 className="text-white text-2xl md:text-4xl font-medium text-center">
         &quot;Ruang Tak Pernah Diam, Ia Berbicara Lewat Visual yang
         Menggugah.&quot;
       </h1>
-      <div className="flex items-center justify-center gap-5 my-8">
-        <div className="max-w-4xl w-full">
+
+      <div className="flex flex-col md:flex-row items-center justify-center gap-8 w-full">
+        {/* Image Section */}
+        <div className="w-full md:w-1/2">
           <Image
             src={Billboard}
             alt="Billboard Kreasi Advertising"
-            className="object-cover object-center  h-[60rem] rounded-2xl "
+            className="object-cover object-center w-full h-64 md:h-[60rem] rounded-2xl shadow-lg"
+            priority
           />
         </div>
-        <div className="flex flex-col gap-3 text-white">
-          <h2 className="text-2xl font-medium">
+
+        {/* Text Content */}
+        <div className="flex flex-col gap-4 text-white w-full md:w-1/2">
+          <h2 className="text-xl md:text-2xl font-medium">
             Visi & Misi Kreasi Advertising
           </h2>
-          <h3 className="text-4xl font-bold ">
-            Kreasi Adveritising Percaya bahwa
+          <h3 className="text-2xl md:text-4xl font-bold">
+            Kreasi Advertising Percaya bahwa
           </h3>
+
           {visi.map((item, index) => (
-            <div key={index} className="flex items-center gap-2">
-              <FaCheckCircle />
-              <p className="my-3 text-md font-normal">{item.description}</p>
+            <div key={index} className="flex items-start gap-2">
+              <FaCheckCircle className="mt-1 min-w-[1rem]" />
+              <p className="text-sm md:text-md font-normal">
+                {item.description}
+              </p>
             </div>
           ))}
 
-          <div className="max-w-3xl w-full">
-            <p className="text-white text-xl font-medium">
+          <div className="mt-4">
+            <p className="text-white text-base md:text-xl font-medium">
               In other words, we make sure to build the right stuff, keep things
               honest, and never get too comfortable. We do all that as one team,
               sharing triumphs and mistakes along the way.
             </p>
           </div>
-          <Link href="" className="hidden md:block">
+
+          {/* WhatsApp Button (desktop only) */}
+          <Link href="#" className="hidden md:block mt-4">
             <Button
               variant={"outline"}
-              className={`text-base font-bold text-black  shadow-sm px-8 cursor-pointer rounded-full hover:scale-105 active:scale-100 transition duration-150 ${Satoshi.className}`}
+              className={`text-base font-bold text-black shadow-sm px-8 py-2 rounded-full hover:scale-105 active:scale-100 transition duration-150 ${Satoshi.className}`}
             >
-              <BsWhatsapp />
+              <BsWhatsapp className="mr-2" />
               Hubungi Kami
             </Button>
           </Link>
